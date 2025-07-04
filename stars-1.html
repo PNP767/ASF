@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<style>
+			body {
+				height: 100vh;
+				margin: 0;
+				background: #0f0c18;
+				overflow: hidden;
+			}
+			.star {
+				position: absolute;
+				width: 2px;
+				height: 2px;
+				background: white;
+				border-radius: 50%;
+				opacity: 0;
+				animation: blink 2s infinite alternate;
+			}
+			@keyframes blink {
+				0% {
+					opacity: 0;
+					transform: scale(0.5);
+				}
+				100% {
+					opacity: 1;
+					transform: scale(1.5);
+				}
+			}
+		</style>
+		<title>Galaxy Starfield Blinking</title>
+	</head>
+	<body>
+		<script>
+			const numStars = 100;
+			for (let i = 0; i < numStars; i++) {
+				const star = document.createElement('div');
+				star.className = 'star';
+				star.style.top = Math.random() * window.innerHeight + 'px';
+				star.style.left = Math.random() * window.innerWidth + 'px';
+				star.style.animationDelay = Math.random() * 2 + 's';
+				star.style.width = star.style.height = Math.random() * 2 + 1 + 'px';
+				document.body.appendChild(star);
+			}
+		</script>
+	</body>
+</html>

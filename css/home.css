@@ -1,0 +1,316 @@
+
+	* {
+	scrollbar-width: thin;
+	scrollbar-color: #b756de #1a1328;
+	caret-color: transparent;
+}
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+div:focus {
+	outline: none;
+}
+body {
+	color: aliceblue;
+	background: #1a1328;
+	/* background: url('img/star og.gif') center center / cover no-repeat; */
+	background-size: cover;
+	margin: 0;
+	padding: 0;
+
+	a {
+		text-decoration: none;
+		color: inherit;
+	}
+	ul li {
+		list-style: none;
+	}
+}
+
+/* header */
+
+header {
+	/* height: 100vh; */
+}
+
+header .wrapper {
+	/* position: absolute; */
+	position: fixed;
+	z-index: 2;
+	top: 0px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 75px;
+	background-color: #333;
+	color: white;
+	/* From https://css.glass */
+	background: rgba(255, 255, 255, 0.14);
+	border-radius: 1px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(3.5px);
+	-webkit-backdrop-filter: blur(3.5px);
+	/* border: 1px solid rgba(255, 255, 255, 0.88); */
+}
+
+header .wrapper div.left {
+	margin-left: 120px;
+}
+
+header .wrapper div.left a {
+	
+}
+
+header .wrapper div.left a img {
+	width: 120px;
+	height: 60px;
+	
+}
+header .wrapper div.left a img:hover{
+	transform: scale(1.2);
+	transition: all 0.2s ease-in-out;
+}
+
+header .wrapper div.right {
+}
+
+header .wrapper div.right ul {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+header .wrapper div.right ul li {
+	font-size: 24px;
+	margin-right: 10px;
+	padding-right: 20px;
+}
+header .wrapper div.right ul li:hover {
+	transform: scale(1.2);
+	transition: all 0.2s ease-in-out;
+}
+header .wrapper div.right ul li:hover {
+	transform: scale(1.2);
+	transition: all 0.2s ease-in-out;
+}
+header .wrapper div.right ul li a {
+	display: flex;
+	align-items: center;
+	color: white;
+}
+header .wrapper div.right ul li a img {
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
+	/* border-radius: 50%; */
+	transition: all 0.3s ease-in-out;
+}
+
+/* div.demo {
+	height: 20vh;
+	background: #dd0f0f;
+	transform: 
+	perspective(1000px)   ----
+	rotateX(20deg)
+	rotateY(20deg);
+} */
+
+/* SECTION#MYSELF */
+
+.work {
+	margin-left: 115px;
+	margin-top: 97px;
+}
+
+section#myself {
+	/* background: linear-gradient(to right, #1a1328, #3b2c4d); */
+	color: white;
+}
+
+#myself .wrapper {
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#myself .wrapper .left {
+}
+
+#myself .wrapper .left h1 {
+	margin-bottom: 50px;
+	/* font-size: xx-large !important; */
+	/* margin: 0 auto; */
+	text-align: center;
+	font-size: 2.5em;
+}
+.name{
+		color: #b756de;
+	font-weight: normal;
+}
+#myself .wrapper .left .name {
+	color: #b756de;
+	font-weight: normal;
+}
+#myself .wrapper .left .i {
+	font-style: italic;
+	/* font-size: 24px; */
+	font-weight: bold;
+}
+
+#myself .wrapper .left p {
+	font-size: 1.3em;
+	margin-bottom: 0;
+}
+
+#myself .wrapper .right {
+	/* width: 400px; */
+}
+
+#myself .wrapper .right a {
+	padding-right: 100px;
+}
+#myself .wrapper .right a img {
+	position: relative;
+	/* right: 50px; */
+	z-index: 1;
+	/* bottom: 250px; */
+	height: 600px;
+	width: 600px;
+	border-radius: 100%;
+	/* margin-right: 100px; */
+	margin-top: 50px;
+}
+#myself .wrapper .right :hover {
+	will-change: transform;
+	transform: scaleZ();
+	transition: 600ms cubic-bezier(0.03, 0.98, 0.52, 0.99);
+	transform: perspective(1000px) rotateX(20deg) rotateY(20deg) scale3d(1, 1, 1);
+}
+
+.find {
+	margin-top: 25px;
+}
+.find .wrapper {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+}
+
+.find .ban {
+	color: white;
+}
+
+.find .ban h1 {
+	/* margin-bottom: 200px; */
+	font-size: 50px;
+	font-weight: 500;
+}
+
+.find .ban p {
+	font-size: 25px;
+	margin-top: 20px;
+	margin-bottom: 100px;
+}
+
+.find .soc {
+	display: flex;
+}
+
+.find .soc a {
+	margin-right: 50px;
+}
+.find .soc a:hover {
+	transform: scale(1.2);
+	transition: all 0.2s ease-in-out;
+}
+.find .soc a img {
+	border-radius: 15%;
+	background: #fff;
+	width: 50px;
+	height: 50px;
+	margin-right: 20px;
+}
+
+@media screen and (max-width: 768px) {
+	
+	body{
+		width: 400px;
+	}
+	header .wrapper {
+		flex-direction: column;
+		align-items: center;
+	}
+	#myself .wrapper {
+		flex-direction: column;
+		align-items: center;
+	}
+	#myself .wrapper .left {
+		text-align: center;
+	}
+	#myself .wrapper .right {
+		margin-top: 20px;
+		margin: 0 auto;
+	}
+	header .wrapper div.left img {
+		width: 100px;
+		height: 50px;
+	}
+	header .wrapper div.right ul li {
+		font-size: 18px;
+	}
+	
+}
+
+/* footer */
+
+footer {
+}
+
+footer .wrapper {
+	margin-top: 75px;
+	display: flex;
+	justify-content: space-around;
+
+	background-color: #0a0416;
+	color: #fff;
+	font-size: 1.5em;
+}
+
+footer .wrapper .left {
+}
+
+footer .wrapper .left p {
+}
+
+footer .wrapper .ceenter {
+}
+
+footer .wrapper .ceenter p {
+}
+
+footer .wrapper .right {
+}
+
+footer .wrapper .right p {
+}
+
+footer .wrapper .right p a {
+}
+
+footer .wrapper .right p a img {
+	border-radius: 15%;
+	background: #fff;
+	width: 30px;
+	height: 30px;
+	margin-right: 20px;
+}
+footer .wrapper .right p a img:hover {
+	transform: scale(1.2);
+	transition: all 0.2s ease-in-out;
+}
